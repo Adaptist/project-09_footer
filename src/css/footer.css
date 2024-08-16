@@ -53,7 +53,6 @@ a {
 
 .footer-head-title {
     text-transform: uppercase;
-    font-family: Inter Tight;
     font-size: 40px;
     font-weight: 500;
     line-height: 40px;
@@ -115,7 +114,6 @@ a {
   }
 
   .form-btn {
-    font-family: Inter Tight;
     font-size: 16px;
     font-weight: 500;
     line-height: 19.36px;
@@ -165,7 +163,6 @@ a {
 
   .footer-adress-link {
     color: #FAFAFA;
-    font-family: Inter Tight;
     font-size: 14px;
     font-weight: 500;
     line-height: 16.94px;
