@@ -6,19 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project-09_footer</title>
     <script type="module" crossorigin src="/project-09_footer/commonHelpers.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-09_footer/assets/index-B_SY1GJM.css">
+    <link rel="stylesheet" crossorigin href="/project-09_footer/assets/index-CiqT03jc.css">
   </head>
   <body>
 
     <footer class="footer">
     <div class="footer-head">
-        <img class="footer-head-img" src="../img/user-png@1x.png" alt="young man working with laptop in office">
-        <h2 class="footer-head-title">Let&#8217;s <span>work</span> together</h2>
+        <h2 class="footer-head-title">
+            <picture class="footer-head-pic">
+                <!-- <source
+                  srcset="
+                    ../img
+                    ../img
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ../img
+                    ../img
+                  "
+                  type="image/webp"
+                /> -->
+                <source
+                  srcset="../img/user-png-70x70@1x.png, ../img/user-png-70x70@2x.png"
+                  type="image/png"
+                />
+                <img class="footer-head-img"
+                  src="../img/user-png-44x44@1x.png"
+                  alt="young man working with laptop in office"
+                  loading="lazy"
+                />
+            </picture>
+            Let&#8217;s 
+            <span class="current">work</span> 
+            together
+        </h2>
     </div>
     <form class="footer-form" action="">
-        <input class="footer-input" type="text" placeholder="clients@gmail.com">
-        <textarea class="footer-comment" name="" id="" cols="20" rows="1" placeholder="comments"></textarea>
-        <button class="form-btn">Send</button>
+        <div class="footer-input-wrapper">
+            <input class="footer-input" type="text" placeholder="clients@gmail.com">
+        </div>
+        <div class="footer-comment-wrapper">
+            <textarea class="footer-comment" name="" id="" cols="20" rows="1" placeholder="comments"></textarea>
+        </div>
+        <button class="form-btn" type="button" data-modal-open="Send">Send</button>
     </form>
     <address class="footer-adress">
         <ul class="adress-list">
