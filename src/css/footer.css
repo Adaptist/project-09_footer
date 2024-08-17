@@ -12,6 +12,20 @@ a {
     text-decoration: none;
   }
 
+/* Отключаем фон для автозаполненных полей */
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #FAFAFA;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+  
 .current {
     color: #ED3B44;
 }
@@ -92,11 +106,25 @@ a {
     }
   }
 
+  .footer-input, .footer-comment {
+    color: #FAFAFA;
+    border: none;
+    border-bottom: 1px solid #FAFAFA99;
+    background-color: transparent;
+}
+
+.footer-input:focus,
+.footer-comment:focus,
+.footer-input:hover,
+.footer-comment:hover {
+    border-bottom: 1px solid #FAFAFA;
+    background-color: transparent;
+    outline: none;
+}
+
   .footer-input {
     height: 44px;
     width: 100%;
-    /* min-width: 245px; */
-    
     margin-bottom: 16px;
   }
 
@@ -108,11 +136,30 @@ a {
     }
   }
 
-  .footer-comment {
+  .footer-input::placeholder,
+  .footer-comment::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-comment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    resize: none;
+    display: block;
     height: 44px;
     width: 100%;
+    background-color: transparent;
     margin-bottom: 32px;
-  }
+
+    /* padding-right: 10px;  */
+    /* Добавь немного padding справа для троеточия */
+}
+
 
   @media screen and (min-width: 768px) {
     .footer-comment {
