@@ -160,7 +160,6 @@ textarea:-webkit-autofill:focus {
     }
 }
 
-
 .footer-input, .footer-comment {
     color: #FAFAFA;
     border: none;
@@ -187,6 +186,30 @@ textarea:-webkit-autofill:focus {
     border-bottom: 1px solid #FAFAFA;
     background-color: transparent;
     outline: none;
+}
+
+.validation-message {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+/* Стили для ошибок */
+.footer-input.error {
+    border-bottom-color: #E74A3B;
+}
+
+.validation-message.error {
+    color: #E74A3B;
+}
+
+/* Стили для успеха */
+.footer-input.success {
+    border-bottom-color: #3CBC81;
+}
+
+.validation-message.success {
+    color: #3CBC81;
 }
 
 .footer-comment {
