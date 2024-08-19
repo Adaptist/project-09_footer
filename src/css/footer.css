@@ -218,6 +218,11 @@ textarea:-webkit-autofill:focus {
     }
 }
 
+.form-btn:focus,
+.form-btn:hover {
+    background-color: #E0373F;
+}
+
 .adress-list {
     list-style: none;
     margin: 0;
