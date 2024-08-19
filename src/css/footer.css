@@ -47,8 +47,8 @@ textarea:-webkit-autofill:focus {
     margin: 0 auto;
     background-color: #1C1D20;
     background-image: image-set(
-        url(../img/glass-effect-mob@2x-png.png) 2x,
-        url(../img/glass-effect-mob@1x-png.png) 1x
+        url(/img/glass-effect-mob@2x-png.png) 2x,
+        url(/img/glass-effect-mob@1x-png.png) 1x
     );
     background-position: left 290px top 0;
     background-repeat: no-repeat;
@@ -65,8 +65,8 @@ textarea:-webkit-autofill:focus {
         padding-top: 80px;
         padding-bottom: 168px;
         background-image: image-set(
-            url(../img/glass-effect-tab@2x-png.png) 2x,
-            url(../img/glass-effect-tab@1x-png.png) 1x
+            url(/img/glass-effect-tab@2x-png.png) 2x,
+            url(/img/glass-effect-tab@1x-png.png) 1x
         );
         background-position: left 570px top 0;
     }
