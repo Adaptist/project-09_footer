@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project-09_footer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main></main>
@@ -12,41 +15,43 @@
         <div class="footer-container">
             <div class="footer-head">
                 <h2 class="footer-head-title">
-                    <picture class="footer-head-pic">
-                        <source
-                            media="(min-width: 768px )"
-                            srcset="../img/logo-user-70x70@1x-avif.avif,../img/logo-user-70x70@2x-avif.avif"
-                            type="image/avif"
-                        />
-                        <source
-                            media="(min-width: 768px )"
-                            srcset="../img/logo-user-70x70@1x-webp.webp,../img/logo-user-70x70@2x-webp.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            media="(min-width: 768px )"
-                            srcset="../img/logo-user-70x70@1x-png.png,../img/logo-user-70x70@2x-png.png"
-                            type="image/png"
-                        />
-        
+                    <picture class="footer-head-pic" style="vertical-align:middle">
                         <source
                             media="(max-width: 767px )"
-                            srcset="../img/logo-user-44x44@1x-avif.avif,../img/logo-user-44x44@2x-avif.avif"
+                            srcset="../img/logo-user-44x44@2x-avif.avif,../img/logo-user-44x44@1x-avif.avif"
                             type="image/avif"
                         />
                         <source
                             media="(max-width: 767px )"
-                            srcset="../img/logo-user-44x44@1x-webp.webp,../img/logo-user-44x44@2x-webp.webp"
+                            srcset="../img/logo-user-44x44@2x-webp.webp,../img/logo-user-44x44@1x-webp.webp"
                             type="image/webp"
                         />
                         <source
                             media="(max-width: 767px )"
-                            srcset="../img/logo-user-44x44@1x-png.png,../img/logo-user-44x44@2x-png.png"
+                            srcset="../img/logo-user-44x44@2x-png.png,../img/logo-user-44x44@1x-png.png"
                             type="image/png"
                         />
+                        <source
+                            media="(min-width: 768px )"
+                            srcset="../img/logo-user-70x70@2x-avif.avif,../img/logo-user-70x70@1x-avif.avif"
+                            type="image/avif"
+                        />
+                        <source
+                            media="(min-width: 768px )"
+                            srcset="../img/logo-user-70x70@2x-webp.webp,../img/logo-user-70x70@1x-webp.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            media="(min-width: 768px )"
+                            srcset="../img/logo-user-70x70@2x-png.png,../img/logo-user-70x70@1x-png.png"
+                            type="image/png"
+                        />
+                        
                         <img class="footer-head-img"
                           src="../img/logo-user-44x44@1x.png"
                           alt="young man working with laptop in office"
+                          width="44"
+                          height="44"
                           loading="lazy"
                         />
                     </picture>
@@ -61,7 +66,7 @@
         
                 </div>
                 <div class="footer-comment-wrapper">
-                    <textarea class="footer-comment" name="comment" id="comment" cols="44" rows="1" placeholder="comments"></textarea>
+                    <textarea class="footer-comment" name="comment" id="comment" rows="1" placeholder="comments"></textarea>
                 </div>
                 <button class="form-btn" type="button" data-modal-open="Send">Send</button>
             </form>
