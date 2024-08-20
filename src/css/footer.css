@@ -130,6 +130,10 @@ textarea:-webkit-autofill:focus {
     }
 }
 
+.footer-input-wrapper {
+    position: relative;
+}
+
 .footer-input-wrapper,
 .footer-comment-wrapper {
     height: 44px;
@@ -193,7 +197,10 @@ textarea:-webkit-autofill:focus {
 .validation-message {
     font-size: 12px;
     line-height: 16px;
-    margin-top: 8px;
+    margin-top: 4px; /* Уменьшаем отступ сверху */
+    position: absolute; /* Фиксируем позицию */
+    bottom: -20px; /* Позиционируем текст под border */
+    left: 0;
 }
 
 .footer-input.error {
