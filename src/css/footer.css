@@ -194,7 +194,6 @@ textarea:-webkit-autofill:focus {
     margin-top: 8px;
 }
 
-/* Стили для ошибок */
 .footer-input.error {
     border-bottom-color: #E74A3B;
 }
@@ -203,7 +202,6 @@ textarea:-webkit-autofill:focus {
     color: #E74A3B;
 }
 
-/* Стили для успеха */
 .footer-input.success {
     border-bottom-color: #3CBC81;
 }
@@ -278,4 +276,59 @@ textarea:-webkit-autofill:focus {
     line-height: 16.94px;
     letter-spacing: -0.02em;
     color: #FAFAFA;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content h3 {
+    margin-bottom: 10px;
+}
+
+.modal-close {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ED3B44;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Стили для всплывающего сообщения (toast) */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E74A3B;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toast strong {
+    display: block;
+    margin-bottom: 5px;
 }
