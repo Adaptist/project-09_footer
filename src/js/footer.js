@@ -72,17 +72,38 @@ function showModal(title, message) {
     modal.classList.add('modal');
     modal.innerHTML = `
         <div class="modal-content">
-            <button class="modal-close">X</button>
+            <button class="modal-close">X
+                <svg class="modal-close-svg" width="11" height="11">
+                    <use href="/src/img/icon.svg#icon-x"></use>
+                </svg>
+            </button>
             <h3>${title}</h3>
             <p>${message}</p>
         </div>
     `;
     document.body.appendChild(modal);
 
-    // Закрытие модального окна
-    modal.querySelector('.modal-close').addEventListener('click', function() {
-        document.body.removeChild(modal);
+    
+    // Закрытие модального окна при клике на кнопку
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+
+    // Закрытие модального окна при клике на фон (backdrop)
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
     });
+
+    // Закрытие модального окна при нажатии клавиши Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        document.body.removeChild(modal);
+    }
 }
 
 // Функция для отображения всплывающего сообщения
